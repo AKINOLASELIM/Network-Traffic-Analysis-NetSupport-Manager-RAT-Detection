@@ -1,4 +1,4 @@
-# Network-Traffic-Analysis-NetSupport-Manager-RAT-Detection
+
 # Network-Traffic-Analysis-NetSupport-Manager-RAT-Detection
 Project Overview
 As a SOC Analyst, I received a SIEM alert for NetSupport Manager RAT activity on 2026-02-28 at 19:55 UTC. The alert flagged an internal host communicating with the external C2 IP 45.131.214[.]85 over TCP port 443.
