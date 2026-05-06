@@ -23,7 +23,7 @@ Unit 42 Threat Intel -NetSupport RAT IOC reference
 Investigation Analysis
 1. Understand the Environment
 Used Statistics → Conversations → Endpoints to map all active hosts and identify the top talkers in the capture before applying any filters.
-![statistics](image/https://https://github.com/AKINOLASELIM/Network-Traffic-Analysis-NetSupport-Manager-RAT-Detection/blob/67a2c8f3279c315c442c7a1eca293398f0c02ae8/statistics.png)
+<img width="800" height="450" alt="statistics" src="https://github.com/user-attachments/assets/3f442783-10bb-4742-ba13-b129033f655a" />
 2. Confirm the C2 Communication
 ip.addr == 45.131.214.85
 All traffic to the known C2 IP was exclusively between 45.131.214[.]85 and internal host 10.2.28.88 — confirming a single compromised machine.
