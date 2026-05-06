@@ -69,6 +69,8 @@ Internal IP- 10.2.28.88
 
 MAC Address- 00:19:d1:b2:4d:ad
 
+<img width="2560" height="1440" alt="mac-address" src="https://github.com/user-attachments/assets/f83b1ff3-ab8f-4be2-9a07-6488f3e0881a" />
+
 Hostname- DESKTOP-TEYQ2NR
 
 Username- brolf
@@ -76,18 +78,29 @@ Username- brolf
 DomainEASYAS123 / easyas123[.]tech
 
 IOC Summary
+
 C2 IP- 45.131.214[.]85
+
 C2 Port- TCP 443
+
 C2 URI- /fakeurl.htm
+
 User-Agent- NetSupportManager/1.3
+
 RAT Family- NetSupport Manager RAT
+
 Beacon Interval- Every few seconds
+
 Geolocation Beacon- geo.netsupportsoftware[.]com
 
 Mitigation & Next Steps
+
 Immediate (0–24 hrs)
+
 *Isolate DESKTOP-TEYQ2NR from the network
+
 *Disable user account brolf in Active Directory
+
 *Block 45.131.214[.]85 at perimeter firewall and DNS
 
 Short-Term (1–7 days)
@@ -99,14 +112,20 @@ Deploy EDR on all endpoints
 Long-Term (1–4 weeks)
 
 Implement DNS filtering (Cisco Umbrella / Cloudflare Gateway)
+
 Deploy network behavioural analytics to auto-detect beaconing
+
 Restrict remote access tool installations via AppLocker/WDAC
+
 Conduct user awareness training on Google ad-based malware delivery
+
 Enable SSL inspection or SSLKEYLOGFILE capture in test environments
 
 
 Author
+
 Akinola selim ishola |security Operations Center
+
 📅 Date: 2026-02-28
 
 
