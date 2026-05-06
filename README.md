@@ -40,6 +40,8 @@ Attempted to extract login credentials — blocked by TLS encryption on port 443
 5. IOC Discovery
 http.request
 Identified a suspicious HTTP POST to http://45.131.214[.]85/fakeurl.htm. Following the HTTP stream confirmed the User-Agent: NetSupportManager/1.3 — directly identifying the RAT family.
+<img width="2560" height="1440" alt="ioc" src="https://github.com/user-attachments/assets/9997f563-f625-41a1-80bf-2b057f2211db" />
+
 
 6. Beaconing Confirmed
    http.request.method == "POST" and ip.addr == 45.131.214.85
@@ -48,6 +50,7 @@ Identified a suspicious HTTP POST to http://45.131.214[.]85/fakeurl.htm. Followi
 
 
 Key Findings
+
 1.1C2 Beaconing Confirmed — 10.2.28.88 beaconing to 45.131.214[.]85/fakeurl.htm every few seconds
 
 2.RAT Identified — User-Agent NetSupportManager/1.3 confirmed in HTTP stream
@@ -61,10 +64,15 @@ Key Findings
 6.User Account Exposed — Username brolf recovered via Kerberos traffic
 
 Victim Profile
+
 Internal IP- 10.2.28.88
+
 MAC Address- 00:19:d1:b2:4d:ad
+
 Hostname- DESKTOP-TEYQ2NR
+
 Username- brolf
+
 DomainEASYAS123 / easyas123[.]tech
 
 IOC Summary
