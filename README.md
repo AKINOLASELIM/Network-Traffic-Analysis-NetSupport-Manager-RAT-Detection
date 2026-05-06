@@ -31,6 +31,7 @@ All traffic to the known C2 IP was exclusively between 45.131.214[.]85 and inter
 3. Identify the Victim
    ip.addr == 10.2.28.88 && kerberos.CNameString
    Kerberos authentication traffic revealed the victim username as brolf. MAC address captured from packet-level Ethernet details.
+<img width="2560" height="1440" alt="kerberos" src="https://github.com/user-attachments/assets/b3966515-cbe0-4766-b2c2-f0517efe1f72" />
 
 4. Credential Hunting (Blocked)
 Attempted to extract login credentials — blocked by TLS encryption on port 443. Without the SSLKEYLOGFILE, HTTPS traffic could not be decrypted.
