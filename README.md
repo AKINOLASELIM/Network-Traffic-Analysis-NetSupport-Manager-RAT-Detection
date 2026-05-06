@@ -35,6 +35,7 @@ All traffic to the known C2 IP was exclusively between 45.131.214[.]85 and inter
 
 4. Credential Hunting (Blocked)
 Attempted to extract login credentials — blocked by TLS encryption on port 443. Without the SSLKEYLOGFILE, HTTPS traffic could not be decrypted.
+<img width="2560" height="1440" alt="TLS" src="https://github.com/user-attachments/assets/584b3e44-8752-4c01-a52c-cd6082530646" />
 
 5. IOC Discovery
 http.request
@@ -43,14 +44,20 @@ Identified a suspicious HTTP POST to http://45.131.214[.]85/fakeurl.htm. Followi
 6. Beaconing Confirmed
    http.request.method == "POST" and ip.addr == 45.131.214.85
    Multiple POST requests to /fakeurl.htm at regular second-by-second intervals — confirming the host was actively under remote attacker control.
+<img width="2560" height="1440" alt="http beaconing" src="https://github.com/user-attachments/assets/27286503-8b5d-449a-9018-64c0393c463a" />
 
 
 Key Findings
 1.1C2 Beaconing Confirmed — 10.2.28.88 beaconing to 45.131.214[.]85/fakeurl.htm every few seconds
+
 2.RAT Identified — User-Agent NetSupportManager/1.3 confirmed in HTTP stream
+
 3.Protocol Anomaly — HTTP tunnelled over TCP/443 to evade port-base
+
 4.Credentials Inaccessible — TLS encryption blocked credential recovery without SSLKEYLOGFILEd firewall rules
+
 5.Single Host Compromised — No lateral movement detected at time of analysis
+
 6.User Account Exposed — Username brolf recovered via Kerberos traffic
 
 Victim Profile
