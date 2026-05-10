@@ -19,8 +19,11 @@ Original PCAP-https://www.malware-traffic-analysis.net/2026/02/28/index.html
 
 Tools Used
 Wireshark-PCAP analysis and packet inspection
+
 SIEM- Initial alert detection
-Virus- TotalC2 IP reputation and IOC enrichment
+
+VirusTotal-C2 IP reputation and IOC enrichment
+
 Unit 42 Threat Intel -NetSupport RAT IOC reference
 
 Investigation Analysis
