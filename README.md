@@ -5,8 +5,11 @@ As a SOC Analyst, I received a SIEM alert for NetSupport Manager RAT activity on
 Using Wireshark, I retrieved and analyzed the packet capture (PCAP) to:
 
 Identify the compromised host and user account
+
 Confirm active C2 beaconing behaviour
+
 Hunt for network-level IOCs
+
 Document findings and recommend mitigation steps
 
 Dataset Information
